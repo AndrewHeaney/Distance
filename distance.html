@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Distance Converter</title>
+    <link rel="stylesheet" href="distance.css">
+  </head>
+  <body>
+    
+    <div>
+    <script charset="utf-8">
+        var answer = prompt("Would you like to convert your journey into miles or km?")
+        if(answer === "miles") {
+            var noMiles = prompt("How many km did you travel?");
+            var newMiles = noMiles / 1.609344;
+            newMiles = newMiles.toFixed(2);
+            document.write("You travelled " + newMiles + " miles");
+        }
+        else if(answer === "km") {
+            var noKm = prompt("How many miles did you travel?");
+            var newKm = noKm * 1.609344;
+            newKm = newKm.toFixed(2);
+            document.write("You travelled " + newKm + " km");
+        }
+        else {
+          document.write("That was invalid please refresh and try again")
+        }
+    </script>
+    </div>
+  </body>
+</html>
